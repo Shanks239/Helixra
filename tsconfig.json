@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@zama-fhe/relayer-sdk": ["./node_modules/@zama-fhe/relayer-sdk"]
+    }
+  },
+  "include": ["contracts/**/*", "scripts/**/*", "test/**/*", "hardhat.config.ts"],
+  "exclude": ["node_modules", "frontend"]
+}
